@@ -15,7 +15,7 @@ int main() {
     // Configura o endereço do servidor.
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons(8080); // Define a porta do servidor
-    serverAddr.sin_addr.s_addr = inet_addr("35.171.9.54"); // Substitua pelo IP do servidor AWS
+    serverAddr.sin_addr.s_addr = inet_addr("3.85.17.170"); // Substitua pelo IP do servidor AWS
 
     // Estabelece uma conexão com o servidor.
     connect(clientSocket, (struct sockaddr *)&serverAddr, sizeof(serverAddr));
